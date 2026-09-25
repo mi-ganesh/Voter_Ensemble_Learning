@@ -54,8 +54,6 @@ The final prediction is generated using **Soft Voting**, where the class probabi
 
 * Python
 * Pandas
-* NumPy
-* Matplotlib
 * Scikit-learn
 * Jupyter Notebook / Google Colab
 * Git & GitHub
@@ -122,7 +120,7 @@ voting_model = VotingClassifier(
     estimators=[
         ("lr", lr_pipeline),
         ("svm", svm_pipeline),
-        ("dt", dt_pipeline)
+        ("ds", ds_pipeline)
     ],
     voting="soft"
 )
@@ -140,8 +138,6 @@ The model is evaluated using:
 * Precision
 * Recall
 * F1 Score
-* Classification Report
-* Confusion Matrix
 
 Example:
 
